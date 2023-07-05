@@ -12,7 +12,73 @@ header {
     padding: 20px, 100px;
     background: #C7c7c7;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        background: #ff8561;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+      
+    .profile-card {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+    }
+      
+    .profile-card h2 {
+      margin-top: 0;
+    }
+      
+    .profile-card label {
+        display: block;
+        margin-bottom: 10px;
+    }
+      
+    .profile-card input[type="text"],
+    .profile-card input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+      
+    .profile-card button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: #8FB98E;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 10px
+    }
+      
+    .profile-card button:hover {
+        background-color: #8FB98E;
+    }
+      
+    .password {
+        font-family: monospace;
+     }
+      
+    .hidden {
+        display: none;
+    }
+      
     align-items: center;
     z-index: 99;
 }
