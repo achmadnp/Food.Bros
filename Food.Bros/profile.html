@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">FOOD.BROS</h1>
+        <nav class="navigation">
+            <a href="Home.html">HOME</a>
+            <a href="Menu.html">MENÜ</a>
+            <a href="profile.html">MEIN KONTO</a>
+            <a href="MeineRezept.html">MEINE REZEPTE</a>
+            <button class="btn">ABMELDEN</button>
+        </nav>
+    </header>
+
+  <div class="profile-card">
+    <h2>Profile</h2>
+
+    <label>Benutzername:</label>
+    <div>
+      <input type="text" id="username" value="FoodBros" disabled>
+      <button class="edit-btn" onclick="editField('username')">Bearbeiten</button>
+    </div>
+
+    <label>E-mail:</label>
+    <div>
+      <input type="text" id="email" value="FoodBros@foodbros.com" disabled>
+      <button class="edit-btn" onclick="editField('email')">Bearbeiten</button>
+    </div>
+
+    <label>Passwort:</label>
+    <div>
+      <input type="password" id="password" value="********" disabled>
+      <button class="edit-btn" onclick="editField('password')">Bearbeiten</button>
+    </div>
+
+    <div id="confirmPasswordContainer" class="hidden">
+      <label>Passwort bestätigen:</label>
+      <div>
+        <input type="password" id="confirmPassword" class="confirm-password" disabled>
+      </div>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
