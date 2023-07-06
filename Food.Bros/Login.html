@@ -5,22 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anmeldung & Login</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Login.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">FOOD.BROS</h1>
-        <nav class="navigation">
-            <a href="Home.html">HOME</a>
-            <a href="Menu.html">MENÜ</a>
-            <a href="#">MEIN KONTO</a>
-            <a href="MeineRezept.html">MEINE REZEPTE</a>
-            <button class="btnLogin-popup">ANMELDEN</button>
-        </nav>
-    </header>
-
     <div class="wrapper">
         <div class="form-box login">
             <h2>FOOD.BROS</h2>
@@ -46,43 +35,8 @@
                 </div>
             </form>    
         </div>
-        
-        <div class="form-box register">
-            <h4>Hier Registrieren!</h4>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Benutzername</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>E-Mail</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Passwort</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Passwort bestätigen</label>
-                </div>
-                <div class="forgot">
-                    <label><input type="checkbox">Ich stimme den Allgemeinen Geschäftsbedingungen zu.</label>
-                </div>
-                <button type="submit" class="btn">Registrieren</button>
-                <div class="login-register">
-                    <p>haben Sie bereits ein Konto?<a href="#" class="login-link">Anmelden</a>
-                    </p>
-                </div>
-            </form>    
-        </div>
     </div>
 
-    <script src="Login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
