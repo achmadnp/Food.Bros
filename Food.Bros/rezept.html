@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezeptdetails</title>
+  <link rel="stylesheet" href="rezept.css">
+</head>
+
+<body>
+  <div id="recipeContainer">
+    <h1>Rezeptdetails</h1>
+    <p><strong>Rezeptname:</strong> Scrambled Eggs</p>
+
+    <h3>Typ:</h3>
+    <ul>
+      <li>Breakfast</li>
+    </ul>
+
+    <h3>Zutaten:</h3>
+    <ul>
+      <li>Egg - 1</li>
+      <li>Butter - 1 tablespoon</li>
+    </ul>
+
+    <h3>Vorbereitung:</h3>
+    <p>
+      STEP 1<br>
+      Lightly whisk 2 large eggs, 6 tbsp single cream or full cream milk and a pinch of salt together until the mixture has just one consistency.
+      <br><br>
+      STEP 2<br>
+      Heat a small non-stick frying pan for a minute or so, then add a knob of butter and let it melt. Don’t allow the butter to brown or it will discolour the eggs.
+      <br><br>
+      STEP 3<br>
+      Pour in the egg mixture and let it sit, without stirring, for 20 seconds. Stir with a wooden spoon, lifting and folding it over from the bottom of the pan.
+      <br><br>
+      STEP 4<br>
+      Let it sit for another 10 seconds then stir and fold again.
+      <br><br>
+      STEP 5<br>
+      Repeat until the eggs are softly set and slightly runny in places. Remove from the heat and leave for a moment to finish cooking.
+      <br><br>
+      STEP 6<br>
+      Give a final stir and serve the velvety scramble without delay.
+    </p>
+
+    <div id="commentSection">
+      <h2>Kommentare:</h2>
+      <ul id="commentList" class="commentList"></ul>
+
+      <form id="commentForm">
+        <h3>Einen Kommentar hinzufügen:</h3>
+        <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Einreichen</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="rezept.js"></script>
+</body>
+
+</html>
