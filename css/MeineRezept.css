@@ -15,24 +15,38 @@ body{
 
 h1 {
     text-align: center;
+    margin-bottom: 10px;
 }
-  
-#recipe-form {
-    text-align: center;
-    margin-bottom: 20px;
+
+#btn {
+    display: block;
+    width: 200px;
+    height: 25px;
+    margin: 0 auto;
+    background: #8FB98E;
+    border: transparent;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}  
+
+.btn {
+    width: 90px;
+    height: 25px;
+    background: #8FB98E;
+    border: transparent;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
 }
-  
-#recipe-input {
-    width: 300px;
-    padding: 5px;
-}
-  
+
 #recipe-list {
     list-style-type: none;
     padding-left: 0;
-    font-size: 2.5rem;
- }
-  
+}
+
+
 .recipe-item {
     display: flex;
     background: #C7c7c7;
@@ -40,17 +54,26 @@ h1 {
     align-items: center;
     height: 80px;
     padding: 10px;
-    border: 1px solid black;
     margin: 5px 15px 15px;
+    font-size: 2em;
 }
   
-.recipe-item span {
+.recipe-item .recipe-info {
     flex: 1;
-}
+  }
   
-.recipe-item button {
+  .recipe-item .recipe-info span {
+    display: block;
+  }
+  
+  .recipe-item .recipe-type {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .recipe-item button {
     margin-left: 10px;
-}
+  }
 
 
 
