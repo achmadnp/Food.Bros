@@ -16,7 +16,7 @@
         <button class="sidebar-button" onclick="toggleFoodList('hauptgericht')">Hauptgericht</button>
         <button class="sidebar-button" onclick="toggleFoodList('dessert')">Dessert</button>
         <button class="sidebar-button" onclick="toggleFoodList('snack')">Snack</button>
-        <button class="sidebar-button" onclick="toggleFoodList('cocktail')">Cocktail</button>
+        <button class="sidebar-button" onclick="toggleFoodList('getränke')">Getränke</button>
         <button class="sidebar-button" onclick="toggleFoodList('pasta')">Pasta</button>
         <button class="sidebar-button" onclick="toggleFoodList('pizza')">Pizza</button>
         <button class="sidebar-button" onclick="toggleFoodList('steaks')">Steaks</button>
@@ -24,48 +24,73 @@
 
     <div class="food-list-container">
         <ul id="frühstück-list" class="food-list">
-            <li><span onclick="handleFoodSelection('fried rice')">Fried rice</span></li>
-            <li><span onclick="handleFoodSelection('egg')">Egg</span></li>
+            <h2 class="food-list-title">Frühstück</h2>
+            <li>
+                <span class="food-name" onclick="handleFoodSelection('fried rice')">Fried rice</span>
+                <span class="recipe-type">Frühstück</span>
+            </li>
+            <li>
+                <span class="food-name" onclick="handleFoodSelection('egg')">Egg</span>
+                <span class="recipe-type">Frühstück</span>
+            </li>
         </ul>
 
         <ul id="vorspeise-list" class="food-list">
-            <li><span onclick="handleFoodSelection('pisang goreng')">Pisang goreng</span></li>
+            <h2 class="food-list-title">Vorspeise</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('fried banana')">Fried Banana</span>
+                <span class="recipe-type">Vorspeise</span>
+            </li>
         </ul>
 
         <ul id="hauptgericht-list" class="food-list">
-            <li><span onclick="handleFoodSelection('bbq')">BBQ</span></li>
+            <h2 class="food-list-title">Hauptgericht</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('bbq')">BBQ</span>
+                <span class="recipe-type">Hauptgericht</span>
+            </li>
         </ul>
 
         <ul id="dessert-list" class="food-list">
-            <li><span onclick="handleFoodSelection('piscok')">Piscok</span></li>
-            <li><span onclick="handleFoodSelection('ktl')">Ktl</span></li>
+            <h2 class="food-list-title">Dessert</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('choco banana')">Choco Banana</span>
+                <span class="recipe-type">Dessert</span>
+            </li>
+            <li><span class="food-name" onclick="handleFoodSelection('mango ice')">Mango Ice</span>
+                <span class="recipe-type">Dessert</span>
+            </li>
         </ul>
         <ul id="snack-list" class="food-list">
-            <li><span onclick="handleFoodSelection('potato')">Potato</span></li>
+            <h2 class="food-list-title">Snack</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('potato crisp')">Potato Crisp</span>
+                <span class="recipe-type">Snack</span>
+            </li>
             
         </ul>
-        <ul id="cocktail-list" class="food-list">
-            <li><span onclick="handleFoodSelection('Margherita')">Margherita</span></li>
-            <li><span onclick="handleFoodSelection('cock')">Cock</span></li>
+        <ul id="getränke-list" class="food-list">
+            <h2 class="food-list-title">Getränke</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('margerita')">Margerita</span>
+                <span class="recipe-type">Getränke</span>
+            </li>
 
         </ul>
         <ul id="pasta-list" class="food-list">
-            <li>Bolognesse</li>
-            <li>Pepperoni</li>
-            <li>Hawaiian</li>
-            <!-- Add more pizza types -->
+            <h2 class="food-list-title">Pasta</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('bolognesse')">Bolognesse</span>
+                <span class="recipe-type">Pasta</span></li>
         </ul>
         <ul id="pizza-list" class="food-list">
-            <li>Margherita</li>
-            <li>Pepperoni</li>
-            <li>Hawaiian</li>
-            <!-- Add more pizza types -->
+            <h2 class="food-list-title">Pizza</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('Peperoni')">Peperoni</span>
+                <span class="recipe-type">Pizza</span>
+            </li>
         </ul>
         <ul id="steaks-list" class="food-list">
-            <li>Ribeye</li>
-            <li>Tenderloin</li>
-            <li>Hawaiian</li>
-            <!-- Add more pizza types -->
+            <h2 class="food-list-title">Steaks</h2>
+            <li><span class="food-name" onclick="handleFoodSelection('ribeye')">Ribeye</span>
+                <span class="recipe-type">Steaks</span>
+            </li>
+            <li><span class="food-name" onclick="handleFoodSelection('tenderloin')">Tenderloin</span>
+                <span class="recipe-type">Steaks</span>
+            </li>
         </ul>
     </div>
 
@@ -73,8 +98,6 @@
 
 
     <script src="Menu.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
