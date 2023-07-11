@@ -46,15 +46,29 @@
       Give a final stir and serve the velvety scramble without delay.
     </p>
 
+    <form id="commentForm">
+      <h3>Einen Kommentar hinzufügen:</h3>
+      <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
+      <button type="submit">Einreichen</button>
+    </form>
+
     <div id="commentSection">
       <h2>Kommentare:</h2>
-      <ul id="commentList" class="commentList"></ul>
+      <ul id="commentList" class="commentList">
+        <li>
+          <div id="comment">
+            <span id="username">The CooKing</span>
+            <span id="comment-text">thats a good idea</span>
+          </div>
+        </li>
+        <li>
+          <div id="comment">
+            <span id="username">BesteName123</span>
+            <span id="comment-text">Habe erst die Brühe aufgeschuttet und dann das Tomatenmark zugefügt. Wie kriege ich das Gulasch noch dunkel oder kommt das mit der Zeit</span>
+          </div>
+        </li>
+      </ul>
 
-      <form id="commentForm">
-        <h3>Einen Kommentar hinzufügen:</h3>
-        <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
-        <button type="submit">Einreichen</button>
-      </form>
     </div>
   </div>
 
