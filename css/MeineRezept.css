@@ -1,80 +1,68 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    min-height: 100vh;
-    background: #ff8561;
-
+body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 100vh;
+  background: #ff8561;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #btn {
-    display: block;
-    width: 200px;
-    height: 25px;
-    margin: 0 auto;
-    background: #8FB98E;
-    border: transparent;
-    border-radius: 7px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}  
+  display: block;
+  width: 200px;
+  height: 25px;
+  margin: 0 auto;
+  background: #8fb98e;
+  border: transparent;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
-.btn {
-    width: 90px;
-    height: 25px;
-    background: #8FB98E;
-    border: transparent;
-    outline: none;
-    border-radius: 7px;
-    cursor: pointer;
+.btn-action {
+  width: 90px;
+  height: 25px;
+  background: #8fb98e;
+  border: transparent;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 #recipe-list {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
-
 
 .recipe-item {
-    display: flex;
-    background: #C7c7c7;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 10px;
-    margin: 5px 15px 15px;
-    font-size: 2em;
+  display: flex;
+  background: #c7c7c7;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+  margin: 5px 15px 15px;
+  font-size: 2em;
 }
-  
+
 .recipe-item .recipe-info {
-    flex: 1;
-  }
-  
-  .recipe-item .recipe-info span {
-    display: block;
-  }
-  
-  .recipe-item .recipe-type {
-    font-size: 14px;
-    color: #888;
-  }
-  
-  .recipe-item button {
-    margin-left: 10px;
-  }
+  flex: 1;
+}
 
+.recipe-item .recipe-info span {
+  display: block;
+}
 
+.recipe-item .recipe-type {
+  font-size: 14px;
+  color: #888;
+}
 
-
+.recipe-item button {
+  margin-left: 10px;
+}
