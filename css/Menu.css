@@ -1,80 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    background: #ff8561;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+  display: flex;
+  background: #ff8561;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0em;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background: #d9d9d9;
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0em;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: #d9d9d9;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .sidebar-button {
-    width: 100%;
-    padding: 10px;
-    background: #8FB98E;
-    border: none;
-    outline: none;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  background: #8fb98e;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 .sidebar-button:hover {
-    background: #70A070;
+  background: #70a070;
 }
 
 .food-list-container {
-    position: fixed;
-    top: 5em;
-    left: 200px; 
-    bottom: 0;
-    width: calc(100% - 200px); 
-    padding: 20px;
+  position: fixed;
+  top: 40px;
+  left: 220px;
+  bottom: 0;
+  width: calc(100% - 200px);
+  padding: 20px;
+}
+
+.food-list-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .food-list {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin-top: 5px;
-
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
 }
 
 .food-list li {
-    display: flex;
-    padding: 5px;
-    font-size: 2.5rem;
-    align-items: center;
-    height: 80px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    background: #C7c7c7;
+  display: flex;
+  padding: 5px;
+  font-size: 2.5rem;
+  align-items: center;
+  height: 80px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background: #c7c7c7;
+  flex-direction: column;
 }
 
-.show {
-    display: block;
+.food-name {
+  font-size: 2.5rem;
+}
+
+.recipe-type {
+  font-size: 1rem;
+  color: #777777;
 }

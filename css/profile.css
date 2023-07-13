@@ -1,67 +1,174 @@
-* {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px, 100px;
+  background: #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-body {
+  body {
     display: flex;
     background: #ff8561;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+  }
 
-h2 {
+  h2 {
     text-align: center;
-}
-  
-.profile-card {
+  }
+
+  .profile-card {
     max-width: 400px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-}
-  
-.profile-card h2 {
-  margin-top: 0;
-}
-  
-.profile-card label {
+  }
+
+  .profile-card h2 {
+    margin-top: 0;
+  }
+
+  .profile-card label {
     display: block;
     margin-bottom: 10px;
-}
-  
-.profile-card input[type="text"],
-.profile-card input[type="password"] {
+  }
+
+  .profile-card input[type="text"],
+  .profile-card input[type="password"] {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
-}
-  
-.profile-card button {
+  }
+
+  .profile-card button {
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: #8FB98E;
+    background-color: #8fb98e;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 10px
-}
-  
-.profile-card button:hover {
-    background-color: #8FB98E;
-}
-  
-.password {
+    margin-bottom: 10px;
+  }
+
+  .profile-card button:hover {
+    background-color: #8fb98e;
+  }
+
+  .password {
     font-family: monospace;
- }
-  
-.hidden {
+  }
+
+  .hidden {
     display: none;
+  }
+
+  align-items: center;
+  z-index: 99;
 }
-  
+
+.logo {
+  font-size: 2em;
+  color: black;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.btn {
+  display: fixed;
+  width: 100px;
+  height: 25px;
+  background: #8fb98e;
+  border: transparent;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.navigation .btn:hover {
+  background: white;
+  color: black;
+}
+
+body {
+  display: flex;
+  background: #ff8561;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+  margin-top: 0;
+}
+
+.profile-card label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-card input[type="text"],
+.profile-card input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.profile-card button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #8fb98e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.profile-card button:hover {
+  background-color: #8fb98e;
+}
+
+.password {
+  font-family: monospace;
+}
+
+.hidden {
+  display: none;
+}

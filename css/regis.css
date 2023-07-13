@@ -9,7 +9,7 @@ body {
 .wrapper {
   position: relative;
   width: 400px;
-  height: 350px;
+  height: 400px;
   background: white;
   border: 2px solid;
   border-radius: 50px;
@@ -17,11 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.5s ease, height 0.2s ease;
-}
-
-.wrapper .form-box {
-  width: 100%;
-  padding: 40px;
 }
 
 .form-box h2 {
@@ -79,7 +74,7 @@ body {
   font-size: 0.9em;
   color: black;
   font-weight: 500;
-  margin: -15px 0px 15px;
+  margin: -10px 0px 15px;
   display: flex;
   justify-content: space-between;
 }
