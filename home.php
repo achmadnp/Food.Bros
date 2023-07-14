@@ -49,7 +49,7 @@
         </a>
     </div>
     <div class="pic">
-        <a href="menu.php?type=sidedish">  
+        <a href="menu.php?type=snacks">  
             <label>SNACK</label>
             <img src="./public/imgs/snack.jpg">
         </a>
