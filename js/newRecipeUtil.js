@@ -46,6 +46,14 @@ function deleteIngredient(button) {
   ingredientsContainer.removeChild(ingredientRow);
 }
 
+function process(e) {
+  var code = e.keyCode ? e.keyCode : e.which;
+  if (code == 13) {
+    document.getElementById("preparationInput").value =
+      document.getElementById("preparationInput").value + "<br>";
+  }
+}
+
 document
   .getElementById("recipeForm")
   .addEventListener("submit", function (event) {

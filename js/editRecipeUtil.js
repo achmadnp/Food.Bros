@@ -46,6 +46,14 @@ function deleteIngredient(button) {
   ingredientsContainer.removeChild(ingredientRow);
 }
 
+function process(e) {
+  var code = e.keyCode ? e.keyCode : e.which;
+  if (code == 13) {
+    document.getElementById("preparationInput").value =
+      document.getElementById("preparationInput").value + "<br>";
+  }
+}
+
 document
   .getElementById("recipeForm")
   .addEventListener("submit", function (event) {
@@ -62,8 +70,6 @@ document
     ingredientAmountArray = Array.from(ingredientSizes).map(
       (input) => input.value
     );
-
-    console.log(ingredientAmountArray);
 
     // Add the ingredient names as a hidden field in the form
     const ingredientNamesInput = document.createElement("input");

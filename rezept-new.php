@@ -62,7 +62,7 @@
 
       <div id="preparationContainer">
         <h3>Vorbereitung: </h3>
-        <textarea name="step" id="preparationInput" placeholder="Vorbereitungsschritte eingeben..." required></textarea>
+        <textarea name="step" id="preparationInput" onkeypress="process(event, this)" placeholder="Vorbereitungsschritte eingeben..." required></textarea>
     </div>
 
     <button type="submit" name="recipe_create_submit">Submit</button>

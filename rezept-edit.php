@@ -21,6 +21,8 @@
       $ingredientSizes = [];
 
       foreach ($recipe['ingredients'] as $ingredient) {
+        // echo $ingredient['name'];
+        // echo $ingredient['amount'];
         $ingredientNames = preg_split("/\,/", $ingredient['name']);
         $ingredientSizes = preg_split("/\,/", $ingredient['amount']);
       }
@@ -55,18 +57,17 @@
     <?php
     echo '<form id="recipeForm" action="rezept-edit.php" method="POST">' .
       '<label for="recipeName" name="rezp">Rezeptname: </label>' .
-      '<input type="hidden" name="recipeId" value=' .
+      '<input type="hidden" name="recipeId" value="' .
       $recipeId .
-      ' required>' .
-      '<input type="text" id="recipeName" name="recipeName" value=' .
+      '" required>' .
+      '<input type="text" id="recipeName" name="recipeName" value="' .
       $recipeName .
-      ' required>' .
-      '<div id="foodTypesContainer">
+      '" required> <div id="foodTypesContainer">
       <h3>Typ:</h3>
       <div id="foodTypeRow">
-        <input id="foodType" type="text" placeholder="Typ" name="foodType" value=' .
+        <input id="foodType" type="text" placeholder="Typ" name="foodType" value="' .
       $type .
-      ' required>
+      '" required>
       </div>
   </div>' .
       '<div id="ingredientsContainer">
@@ -74,12 +75,12 @@
         ';
     for ($i = 0; $i < count($ingredientNames); $i++) {
       echo '<div class="ingredientRow">
-          <input type="text" class="ingredientName" placeholder="Name der Zutaten" value=' .
+          <input type="text" class="ingredientName" placeholder="Name der Zutaten" value="' .
         $ingredientNames[$i] .
-        ' required>
-          <input type="text" class="ingredientSize" placeholder="Größe" value=' .
+        '" required>
+          <input type="text" class="ingredientSize" placeholder="Größe" value="' .
         $ingredientSizes[$i] .
-        ' required>
+        '" required>
           <button type="button" class="deleteButton" onclick="deleteIngredient(this)"><ion-icon name="trash-outline"></ion-icon></button>
         </div>';
     }
@@ -89,7 +90,7 @@
       <button type="button" id="addIngredientButton" onclick="addIngredient()">Zutaten hinzufügen</button>
       <div id="preparationContainer">
         <h3>Vorbereitung: </h3>
-        <textarea id="preparationInput" name="step" placeholder="Vorbereitungsschritte eingeben..." required>' .
+        <textarea id="preparationInput" name="step" placeholder="Vorbereitungsschritte eingeben..." onkeypress="process(event, this)" required>' .
       $recipe['step'] .
       '</textarea>
       </div>
