@@ -70,7 +70,8 @@
       $filteredRecipes = array_filter($recipes, function ($recipe) use (
         $selectedType
       ) {
-        return $selectedType === '' || $recipe['type'] === $selectedType;
+        return $selectedType === '' ||
+          strtolower($recipe['type']) === $selectedType;
       });
 
       // Display the filtered recipes
@@ -79,7 +80,12 @@
         '</h2>
       <ul class="food-list">';
       foreach ($filteredRecipes as $recipe) {
-        echo '<li><span>' . $recipe['name'] . '</span></li>';
+        echo '<a href=recipe-detail.php?recipeId=' .
+          $recipe['id'] .
+          '><li><span>' .
+          $recipe['name'] .
+          '</span></li></a>';
+        echo '';
       }
       echo '</ul>';
     }
