@@ -50,12 +50,10 @@
         $recipe['id'] .
         '"><button class="btn-action">Bearbeiten</button></a>
 
-      <button id="delete_recipe" data-rid=' .
+      <button data-rid=' .
         $recipe['id'] .
-        ' class="btn-action">Löschen</button>
-    </div>
-        
-        
+        ' class="btn-action delete_recipe">Löschen</button>
+    </div>        
     </li>';
     }
     echo '</ul>';

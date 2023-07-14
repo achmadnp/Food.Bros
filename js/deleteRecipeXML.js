@@ -1,4 +1,10 @@
-document.getElementById("delete_recipe").addEventListener("click", function () {
+const deleteBtn = document.getElementsByClassName("delete_recipe");
+
+for (let index = 0; index < deleteBtn.length; index++) {
+  deleteBtn[index].addEventListener("click", deleteRecipe);
+}
+
+function deleteRecipe() {
   const param = this.getAttribute("data-rid");
 
   const xhr = new XMLHttpRequest();
@@ -11,4 +17,4 @@ document.getElementById("delete_recipe").addEventListener("click", function () {
     }
   };
   xhr.send("delete_recipeId=" + encodeURIComponent(param));
-});
+}
